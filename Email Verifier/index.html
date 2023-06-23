@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Verifier</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Email Verifier</h1>
+    <div class="file-input">
+      <label class="btn" for="fileInput">Choose File</label>
+      <div class="file-name" id="fileName">No file selected</div>
+      <div class="file-name" id="fileName"></div>
+      <input type="file" id="fileInput">
+    </div>
+    <button id="verifyBtn" class="verify-btn">Verify</button>
+    <div id="loader" class="loader"></div>
+    <div id="resultContainer">
+      <h3>Verification Result</h3>
+      <table id="resultTable">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Verification</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a id="downloadBtn" href="#" download>Download Result</a>
+      <div class="button-container">
+        <a id="downloadValidBtn" href="#" download>Download Valid Only</a>
+        <a id="downloadInvalidBtn" href="#" download>Download Invalid Only</a>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
